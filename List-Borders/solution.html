@@ -30,7 +30,7 @@
     }
     /* underline the top numbers red */
     h4 {
-      text-decoration: underline red;
+      border-bottom:2px solid red;
     }
     /* go night mode on hovers over each timestable, but not the parent  */
   #tables li {
@@ -48,9 +48,14 @@
     margin-top:20px;
   }
      /* subtract 20px from left margins of each child table, add it to the right margins */
-  
+  #tables{
+    margin-left:-20px;
+    margin-right:20px;
+  }
     /* put 25px padding at the bottom of the parent  */
-
+  #tables {
+    padding-bottom:25px;
+  }
    </style>
 </head>
 
