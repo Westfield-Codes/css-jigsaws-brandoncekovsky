@@ -8,6 +8,77 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="../style.css" rel="stylesheet" type="text/css" />
   <style>
+    .button1 {
+      transition-duration:0.4s;
+      height:40px;
+      padding:20px;
+      background-color:white;
+    }
+    .button1:hover {
+      background-color:lightblue;
+      color:white;
+      border-radius:4px;
+    }
+
+    .button2 {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: lightgoldenrodyellow;
+      border: none;
+      color: black;
+      text-align: center;
+      font-size: 18px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+      margin: 4px;
+      width:90px;
+      height:20px;
+    }
+
+.button2 span {
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+    }
+
+
+.button3 {
+  background-color:orange;
+  border:2px solid black;
+  padding:15px 25px;
+  border-radius:15px;
+  outline:none;
+  box-shadow:0 9px #999;
+  display:inline-block;
+}
+.button3:hover {
+  background-color:#ffd580;
+  cursor:pointer;
+}
+.button3:active {
+  background-color:#ffd580;
+  box-shadow:0 5px #666;
+  transform:translateY(4px);
+}
   </style>
 </head>
 
@@ -22,7 +93,7 @@
       <li><a href="index.html">Project</a></li>
     </ul>
   </div>
-  <button class="button">Button 1</button>
+  <button class="button1">Button 1</button>
   <button2 class="button2" style="vertical-align:middle"><span>Button 2</span></button2>
   <button3 class="button3">Button 3</button3><br>
   
