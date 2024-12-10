@@ -8,17 +8,32 @@
       <style>  
 
       /* Force the store id width to 900px */
-        
+        #store {
+         width:900px;
+        }
       /* Give topnav links inline-block display */
-        
+        .topnav a {
+         display:inline-block;
+        }
       /* Float column classes left, with border-box box sizing */
-
+         .columnsideleft, .columnmiddle, .columnsideright {
+            float:left;
+            box-sizing:border-box;
+         }
       /* Set left and right columns to 25% width */
-
+         .columnsideleft, .columnsideright {
+            width:25%;
+         }
       /* Set middle column to 50% */
-        
+        .columnmiddle {
+           width:50%;
+        }
       /* Make the footer clear both floated elements */
-
+        .footer:after {
+         content:"";
+         display:table;
+         clear:both;
+        }
   
       </style>
    </head>
@@ -42,18 +57,18 @@
           </div>
         </div>
          <div class="row">
-            <div class="column side left">
+            <div class="columnsideleft">
                <h1>Why Epicfit?</h1>
                <p>The best hats for your sports and workouts. Keeps you hair in place. Our company guarantees best quality and style that is best fit for you.</p>
             </div>
-            <div class="column middle">
+            <div class="columnmiddle">
                <div class="product"></div>
                <p><strong>Epicfit Black/white hat</strong> is the top selling hat on this site.<br>
                   Cost: $29.99
                  <button>Add to Cart</button>
                </p>
             </div>
-            <div class="column side right">
+            <div class="columnsideright">
                <h1>More Info</h1>
                <p>Epicfit has the hat qualities and clothes qualities you would ever need for sports and workout. This hat has been reccommended by most sports companies as #1 hat for workout.</p>
             </div>
